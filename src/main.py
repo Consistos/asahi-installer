@@ -500,17 +500,17 @@ class InstallerMain:
 
         return ipsw
 
-    def choose_os(self):
-        os_list = self.data["os_list"]
-        if not self.expert:
-            os_list = [i for i in os_list if not i.get("expert", False)]
-        if self.cur_disk != self.sys_disk:
-            os_list = [i for i in os_list if i.get("external_boot", False)]
-        p_question("Choose an OS to install:")
-        idx = self.choice("OS", [i["name"] for i in os_list])
-        os = os_list[idx]
-        logging.info(f"Chosen OS: {os['name']}")
-        return os
+        def choose_os(self):
+            os_list = self.data["os_list"]
+            if not self.expert:
+                os_list = [i for i in os_list if not i.get("expert", False)]
+            if self.cur_disk != self.sys_disk:
+                os_list = [i for i in os_list if i.get("external_boot", False)]
+            p_question("Choose an OS to install:")
+            idx = self.choice("OS", [i["name"] for i in os_list])
+            os = os_list[idx]
+            logging.info(f"Chosen OS: {os['name']}")
+            return os
 
     def set_reduced_security(self):
         while True:

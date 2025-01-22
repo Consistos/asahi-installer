@@ -11,7 +11,14 @@ class OSInstaller(PackageInstaller):
         self.dutil = dutil
         self.data = data
         self.template = template
-        self.name = template["default_os_name"]
+        base_name = template["default_os_name"]
+        # Get existing OS names from partition labels
+        existing_names = {p.label.split(" - ")[-1] for p in self.dutil.disk.partitions if p.label}
+        count = 1
+        while base_name in existing_names:
+            base_name = f"{count} {template['default_os_name']}"
+            count += 1
+        self.name = base_name
         self.ucache = None
         self.efi_part = None
         self.idata_targets = []

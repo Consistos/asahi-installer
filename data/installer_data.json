@@ -1,11 +1,11 @@
 {
     "os_list": [
         {
-            "name": "Fedora Asahi Remix 40 with KDE Plasma",
+            "name": "Fedora Asahi Remix 41 with KDE Plasma",
             "default_os_name": "Fedora Linux with KDE Plasma",
             "boot_object": "m1n1.bin",
             "next_object": "m1n1/boot.bin",
-            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-40-kde-202405221600.zip",
+            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-41-kde-202412161600.zip",
             "icon": "fedora.icns",
             "supported_fw": [
                 "12.3",
@@ -13,8 +13,8 @@
                 "13.5"
             ],
             "extras": [
-                "https://codecs.fedoraproject.org/openh264/40/aarch64/os/Packages/m/mozilla-openh264-2.4.1-2.fc40.aarch64.rpm",
-                "https://codecs.fedoraproject.org/openh264/40/aarch64/os/Packages/o/openh264-2.4.1-2.fc40.aarch64.rpm"
+                "https://codecs.fedoraproject.org/openh264/41/aarch64/os/Packages/m/mozilla-openh264-2.4.1-2.fc41.aarch64.rpm",
+                "https://codecs.fedoraproject.org/openh264/41/aarch64/os/Packages/o/openh264-2.4.1-2.fc41.aarch64.rpm"
             ],
             "partitions": [
                 {
@@ -22,7 +22,7 @@
                     "type": "EFI",
                     "size": "524288000B",
                     "format": "fat",
-                    "volume_id": "0xa63e863c",
+                    "volume_id": "0x200546ba",
                     "copy_firmware": true,
                     "copy_installer_data": true,
                     "source": "esp"
@@ -36,18 +36,18 @@
                 {
                     "name": "Root",
                     "type": "Linux",
-                    "size": "14226010112B",
+                    "size": "19086159872B",
                     "expand": true,
                     "image": "root.img"
                 }
             ]
         },
         {
-            "name": "Fedora Asahi Remix 40 with GNOME",
+            "name": "Fedora Asahi Remix 41 with GNOME",
             "default_os_name": "Fedora Linux with GNOME",
             "boot_object": "m1n1.bin",
             "next_object": "m1n1/boot.bin",
-            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-40-gnome-202405221600.zip",
+            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-41-gnome-202412161600.zip",
             "icon": "fedora.icns",
             "supported_fw": [
                 "12.3",
@@ -55,8 +55,8 @@
                 "13.5"
             ],
             "extras": [
-                "https://codecs.fedoraproject.org/openh264/40/aarch64/os/Packages/m/mozilla-openh264-2.4.1-2.fc40.aarch64.rpm",
-                "https://codecs.fedoraproject.org/openh264/40/aarch64/os/Packages/o/openh264-2.4.1-2.fc40.aarch64.rpm"
+                "https://codecs.fedoraproject.org/openh264/41/aarch64/os/Packages/m/mozilla-openh264-2.4.1-2.fc41.aarch64.rpm",
+                "https://codecs.fedoraproject.org/openh264/41/aarch64/os/Packages/o/openh264-2.4.1-2.fc41.aarch64.rpm"
             ],
             "partitions": [
                 {
@@ -64,7 +64,7 @@
                     "type": "EFI",
                     "size": "524288000B",
                     "format": "fat",
-                    "volume_id": "0x9d8112a7",
+                    "volume_id": "0x23faad3e",
                     "copy_firmware": true,
                     "copy_installer_data": true,
                     "source": "esp"
@@ -78,18 +78,18 @@
                 {
                     "name": "Root",
                     "type": "Linux",
-                    "size": "11345571840B",
+                    "size": "14761832448B",
                     "expand": true,
                     "image": "root.img"
                 }
             ]
         },
         {
-            "name": "Fedora Asahi Remix 40 Server",
+            "name": "Fedora Asahi Remix 41 Server",
             "default_os_name": "Fedora Linux Server",
             "boot_object": "m1n1.bin",
             "next_object": "m1n1/boot.bin",
-            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-40-server-202405221600.zip",
+            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-41-server-202412161600.zip",
             "icon": "fedora.icns",
             "supported_fw": [
                 "12.3",
@@ -103,7 +103,7 @@
                     "type": "EFI",
                     "size": "524288000B",
                     "format": "fat",
-                    "volume_id": "0x8a1c9b0b",
+                    "volume_id": "0x6b99137",
                     "copy_firmware": true,
                     "copy_installer_data": true,
                     "source": "esp"
@@ -117,18 +117,18 @@
                 {
                     "name": "Root",
                     "type": "Linux",
-                    "size": "4481593344B",
+                    "size": "5012172800B",
                     "expand": true,
                     "image": "root.img"
                 }
             ]
         },
         {
-            "name": "Fedora Asahi Remix 40 Minimal",
+            "name": "Fedora Asahi Remix 41 Minimal",
             "default_os_name": "Fedora Linux Minimal",
             "boot_object": "m1n1.bin",
             "next_object": "m1n1/boot.bin",
-            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-40-minimal-202405221600.zip",
+            "package": "https://asahilinux-fedora.b-cdn.net/os/fedora-41-minimal-202412161600.zip",
             "icon": "fedora.icns",
             "supported_fw": [
                 "12.3",
@@ -142,7 +142,7 @@
                     "type": "EFI",
                     "size": "524288000B",
                     "format": "fat",
-                    "volume_id": "0x86e84498",
+                    "volume_id": "0xfedf195a",
                     "copy_firmware": true,
                     "copy_installer_data": true,
                     "source": "esp"
@@ -156,39 +156,7 @@
                 {
                     "name": "Root",
                     "type": "Linux",
-                    "size": "3933188096B",
-                    "expand": true,
-                    "image": "root.img"
-                }
-            ]
-        },
-        {
-            "name": "Arch Linux ARM (not recommended)",
-            "default_os_name": "Arch Linux ARM",
-            "expert": true,
-            "boot_object": "m1n1.bin",
-            "next_object": "m1n1/boot.bin",
-            "package": "asahi-base-20231012-1.zip",
-            "supported_fw": [
-                "12.3",
-                "12.3.1",
-                "13.5"
-            ],
-            "partitions": [
-                {
-                    "name": "EFI",
-                    "type": "EFI",
-                    "size": "500MB",
-                    "format": "fat",
-                    "volume_id": "0x2abf9f91",
-                    "copy_firmware": true,
-                    "copy_installer_data": true,
-                    "source": "esp"
-                },
-                {
-                    "name": "Root",
-                    "type": "Linux",
-                    "size": "5GB",
+                    "size": "4616859648B",
                     "expand": true,
                     "image": "root.img"
                 }
